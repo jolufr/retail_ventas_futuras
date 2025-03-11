@@ -1,36 +1,33 @@
-# Predicción de Ventas en Retail Online
+# 📊 Predicción de Ventas en Retail Online
 
-Este proyecto tiene como objetivo desarrollar un modelo predictivo para estimar la cantidad de ventas futuras en un negocio de retail online. Con esta información, la empresa puede anticipar la demanda y mejorar la gestión del inventario, optimizando así las estrategias comerciales y la planificación de stock.
+## 🔍 Introducción
+Este proyecto tiene como objetivo desarrollar un modelo predictivo para estimar la cantidad de ventas futuras en un negocio de retail online.
 
-Para lograrlo, se realizó un exhaustivo procesamiento de los datos, incluyendo la limpieza, transformación y generación de variables temporales clave. Se eliminaron valores atípicos y se aplicaron técnicas de normalización para mejorar la calidad del dataset. Posteriormente, se implementó un modelo de `XGBoost` con optimización de hiperparámetros para predecir las ventas futuras basándose en patrones históricos.
+## 🎯 Objetivo
+Proporcionar una herramienta basada en datos que permita anticipar la demanda futura, optimizar la gestión del inventario y mejorar la toma de decisiones comerciales.  
 
-Los resultados obtenidos muestran que el modelo tiene una precisión adecuada, con un coeficiente de determinación (`R²`) de **0.75**, lo que indica que captura el 75% de la variabilidad en los datos. Esto permite a la empresa tomar decisiones informadas sobre estrategias de venta, descuentos y abastecimiento, reduciendo riesgos y maximizando oportunidades de negocio.
+## 🛠️ Tecnologías Utilizadas
+- **Python**: Pandas, Matplotlib, Seaborn, Scikit-learn, Prophet, Apriori  
+- **Jupyter Notebook**: Entorno interactivo para análisis  
+- **Conjunto de datos en CSV**: Contiene información sobre ventas y comportamiento de los clientes  
 
-## 📌 Librerías Usadas
+## 📈 Pasos Clave (Metodología)
+### 1️⃣ Análisis Exploratorio de Datos (EDA)
+- Identificación de productos más vendidos  
+- Análisis de clientes recurrentes vs. nuevos  
+- Evaluación de tendencias de ventas a lo largo del tiempo  
 
-### Procesamiento de Datos
-- `pandas`
-- `numpy`
-- `sklearn.preprocessing.StandardScaler`
-- `sklearn.preprocessing.LabelEncoder`
+### 2️⃣ Modelos de Machine Learning
+- **Predicción de Ventas Futuras**: Uso de Prophet para modelar y predecir las ventas para los próximos 30 días.  
+- **Segmentación de Clientes**: Cálculo de métricas RFM y aplicación de K-Means para identificar perfiles de clientes.  
+- **Recomendación de Productos**: Uso de Apriori para encontrar reglas de asociación y sugerir productos a los clientes.  
 
-### Modelado Predictivo
-- `xgboost.XGBRegressor`
-- `sklearn.model_selection.RandomizedSearchCV`
-- `sklearn.model_selection.train_test_split`
-- `sklearn.metrics.mean_absolute_error`
-- `sklearn.metrics.mean_squared_error`
-- `sklearn.metrics.r2_score`
+## 📊 Resultados
+El análisis busca confirmar que:  
+- Existen patrones de compra recurrentes a lo largo del tiempo.  
+- Los clientes pueden ser segmentados en grupos útiles para estrategias de marketing.  
+- Es posible predecir las ventas futuras con un modelo basado en datos históricos.  
 
-### Visualización
-- `matplotlib.pyplot`
-- `seaborn`
-
-## 📥 Cómo Ejecutar el Proyecto
-
-Clona el repositorio:
+## 🚀 Cómo Ejecutarlo
 ```bash
-git clone https://github.com/usuario/proyecto-retail-ventas-futuras.git
-cd proyecto-retail-ventas-futuras
-```
-
+clonar este repositorio
